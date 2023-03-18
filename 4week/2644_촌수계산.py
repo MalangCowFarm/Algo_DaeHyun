@@ -18,12 +18,12 @@ People = int(input())
 
 A_num, B_num = map(int,input().split())
 
-relation_count = int(input())
+relation_cnt = int(input())
 
 adj = [[0 for _ in range(People+1)] for _ in range(People+1)]
 visited = [False] * (People+1)
 
-for i in range(relation_count) :
+for i in range(relation_cnt) :
     X,Y = map(int,input().split())
     adj[X][Y] = 1
     adj[Y][X] = 1

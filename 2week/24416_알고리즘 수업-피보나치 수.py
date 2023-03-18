@@ -11,13 +11,13 @@ def dp(n):
     dp_empty[0] = 1
     dp_empty[1] = 1
 
-    dp_count = 0
+    dp_cnt = 0
 
     for i in range(3, n + 1):
-        dp_count += 1
+        dp_cnt += 1
         dp_empty[n] = dp_empty[n - 1] + dp_empty[n - 2]
 
-    return dp_count
+    return dp_cnt
 
 
 T = int(input())

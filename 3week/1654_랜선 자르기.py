@@ -10,7 +10,7 @@ maxi = 0
 for i in K_list :
     maxi = max(int(i),maxi)
 
-def binarySearch(start,end) :
+def binarydungeons_count(start,end) :
     cnt = 0
     if start == end or abs(start-end) == 1 :
         for i in K_list :
@@ -25,9 +25,9 @@ def binarySearch(start,end) :
     for i in K_list :
         cnt += int(i)//mid
     if cnt < N :
-        binarySearch(start,mid)
+        binarydungeons_count(start,mid)
     elif cnt>=N :
-        binarySearch(mid,end)
+        binarydungeons_count(mid,end)
 
-binarySearch(0,maxi)
+binarydungeons_count(0,maxi)
 

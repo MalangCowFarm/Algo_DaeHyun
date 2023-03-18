@@ -16,15 +16,15 @@ for i in range(len(A_list)) :
     
 
     
-count = 0 
+cnt = 0 
 for i in range(len(B_list)) :
     if B_list[i] in dict_1.keys() :
         dict_1[B_list[i]] -= 1
     else :
-        count+=1 
+        cnt+=1 
  
 for key, value in dict_1.items() :
     if value == 1 :
-        count+=1
+        cnt+=1
 
-print(count)
+print(cnt)
