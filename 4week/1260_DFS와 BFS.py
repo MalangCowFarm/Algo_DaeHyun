@@ -35,13 +35,13 @@ def bfs(node):
    
     visiteds = []
     while queue:
-        node_now = queue.popleft()
-        if node_now not in sol :
-            sol.append(node_now)
-        visiteds.append(node_now)
+        node_gets= queue.popleft()
+        if node_getsnot in sol :
+            sol.append(node_gets)
+        visiteds.append(node_gets)
         
       
-        for i in adj[node_now]:
+        for i in adj[node_gets]:
             if i not in visiteds:
                 queue.append(i)
                 

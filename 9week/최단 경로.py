@@ -19,11 +19,11 @@ def dijkstra(start) :
     heapq.heappush(Q,(0,start))
     distance[start]= 0 
     while Q :
-        dist, now = heapq.heappop(Q)
-        if distance[now] < dist :
+        dist, gets= heapq.heappop(Q)
+        if distance[gets] < dist :
             continue
 
-        for i in adj[now] :
+        for i in adj[gets] :
             cost = dist + i[1]
             if cost < distance[i[0]] :
                 distance[i[0]] = cost

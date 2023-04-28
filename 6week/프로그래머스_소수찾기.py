@@ -1,4 +1,4 @@
-from itertools import permutations
+from itertools import combinations
 
 
 
@@ -18,7 +18,7 @@ def solution(numbers):
     cnt = 0
     for i in range(1,len(N_list)+1) :
 
-        nPr = permutations(N_list, i)
+        nPr = combinations(N_list, i)
         Num_list = list(set(nPr))
         for x in Num_list :
 

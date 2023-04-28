@@ -105,9 +105,9 @@ def solution(survey, choices):
 
 
 
-    answer = "".join(sol)
+    solutewer = "".join(sol)
 
-    return answer
+    return solutewer
 
 surveys = ["TR", "RT", "TR"]
 choices = [7, 1, 3]

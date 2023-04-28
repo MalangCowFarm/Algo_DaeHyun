@@ -1,9 +1,9 @@
 def solution(n):
-    ans = 0
+    solute = 0
     while n > 0:
-        ans += n % 10
+        solute += n % 10
         n //= 10
-    return ans
+    return solute
 
 example = []
 

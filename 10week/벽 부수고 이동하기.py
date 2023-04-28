@@ -6,7 +6,7 @@ N, M = map(int, input().split())
 board = [list(map(int, input().rstrip())) for _ in range(N)]
 visited = [[[0] * 2 for _ in range(M)] for _ in range(N)]
 dir = [[-1, 0], [1, 0], [0, -1], [0, 1]]
-ans = 0
+solute = 0
 
 
 def bfs():
